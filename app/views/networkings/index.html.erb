@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Networkings</h1>
+
+<div id="networkings">
+  <% @networkings.each do |networking| %>
+    <%= render networking %>
+    <p>
+      <%= link_to "Show this networking", networking %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New networking", new_networking_path %>
